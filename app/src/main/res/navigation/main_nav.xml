@@ -18,5 +18,10 @@
         android:id="@+id/mainOnboardingFragment"
         android:name="com.example.eventbookingapp.onboarding.MainOnboardingFragment"
         android:label="fragment_main_onboarding"
-        tools:layout="@layout/fragment_main_onboarding" />
+        tools:layout="@layout/fragment_main_onboarding" >
+        <action
+            android:id="@+id/action_mainOnboardingFragment_to_auth_nav"
+            app:destination="@id/auth_nav" />
+    </fragment>
+    <include app:graph="@navigation/auth_nav" />
 </navigation>
